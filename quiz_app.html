@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz app</title>
+        <link rel="stylesheet" href="./css styles/main_page_style.css">
+        <link rel="stylesheet" href="./css styles/loading_style.css">
+        <link rel="stylesheet" href="./css styles/questions_style.css">
+        <link rel="stylesheet" href="./css styles/results_style.css">
+        <script defer src="./quiz_app.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <img src="./pics/tym_logo.png" alt="TYM logo" id="main_logo">
+            <h1>Welcome to the <span id="title_logo">Test your mind</span> quiz app</h1>
+        </header>
+        
+        <p id="welcome_msg">Here you can challenge your knowledge with the questions from your favorite categories</p>   
+        
+        <section id="options_settings" class="container active">
+            <div class="settings">
+                <div class="field">
+                    <label for="categories">Category</label>
+                    <select id="categories"></select>
+                </div>
+
+                <div class="field">
+                    <label for="diff">Difficulty</label>
+                    <select id="diff">
+                        <option value="any">Any difficulty</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="Qnum">Number of questions</label>
+                    <input type="number" id="Qnum" min="1">
+                </div>
+            </div>
+
+            <button id="start_btn">Start Quiz ></button>
+        </section>
+
+        <section id="loading_page" class="container">
+            <div class="loader"></div>
+        </section>
+
+        <section id="questions_page" class="container">
+            <div class="quiz_container">
+                <div class="q_header">
+                    <span id="q_counter"></span>
+                    <span id="current_score"></span>
+                </div>
+
+                <p id="q_text"></p>
+
+                <div id="answers" class="answers_box"></div>
+
+                <button id="next_btn" disabled>Next question</button>
+            </div>
+        </section>
+
+        <section id="result_page" class="container">
+            <div class="result_container">
+                <h2>Quiz finished 🎉</h2>
+                <p id="final_score"></p>
+                <ul id="your_results"></ul>
+                <button id="restart_btn">Restart the quiz</button>
+            </div>
+        </section>
+    </body>
+</html>

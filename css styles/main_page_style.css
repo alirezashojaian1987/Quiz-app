@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Inter', system-ui, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/pics/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color:white;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    margin:30px;
+    text-align: center;
+    margin-right:200px;
+}
+
+#main_logo{
+    width:200px;
+    height:150px;
+}
+
+#title_logo{
+    color:orange;
+}
+
+#welcome_msg{
+    margin-top:-35px;
+    margin-bottom:25px;
+    text-align: center;
+    max-width:600px;
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+}
+
+.field{
+    display: flex;
+    margin-bottom:10px;
+    flex-direction: column;
+}
+
+.container{
+    display:none;   
+}
+
+.container.active{
+    display:flex;
+}
+
+#options_settings{
+    align-items: flex-start;
+    position: relative;
+    background-color: rgb(0, 174, 255);
+    flex-direction: column;
+    width:400px;
+    min-height:50vh;
+    border:1px solid transparent;
+    border-radius:10%;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+select{
+    border:5px double rgba(0, 0, 0, 0.63);
+    border-radius: 5px;
+    width:100%;
+    height:30px;
+}
+
+#Qnum{
+    width:100%;
+    height:30px;
+    border:1px solid transparent;
+    border-radius:5px;
+    padding:5px;
+}
+
+#start_btn{
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:40px;
+    border:1px solid transparent;
+    background-color: rgba(0, 0, 109, 0.5);
+    width:55%;
+    height:40px;
+    border-radius:7px;
+    color:white;
+    outline:none;
+    transition:transform 0.3s ease;
+    font-weight: bolder;
+    font-size:medium;
+}
+
+#start_btn:hover{
+    transform:scale(1.05);
+}
+
+.hidden{
+    display:none;
+}
