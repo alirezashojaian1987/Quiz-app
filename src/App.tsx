@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import logo from './assets/tym_logo.png';
+import logo from './assets/tym_logo.webp';
 import { useQuiz } from "./hooks/useQuiz";
 import StartScreen from "./components/StartScreen";
 import LoadingScreen from "./components/LoadingScreen";

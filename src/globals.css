@@ -31,7 +31,7 @@
 
 body{
   color: white;
-  background-image: url('./assets/background.png');
+  background-image: url('./assets/background.webp');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
