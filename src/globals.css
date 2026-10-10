@@ -4,6 +4,8 @@
   /* Colors */
   --color-primary: #00aeff;
   --color-accent: #ff9f1c;
+  --color-primary-dark: #0089cc;
+  --color-accent-soft: rgba(255, 159, 28, 0.15);
 
   /* Surface */
   --color-panel-border: rgba(255, 255, 255, 0.18);
